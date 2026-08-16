@@ -1,0 +1,12 @@
+# Dataset — never commit
+Dataset_Kitti/
+*.zip
+
+# Python
+vo_env/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+.vscode/
