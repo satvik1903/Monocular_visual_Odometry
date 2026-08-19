@@ -1,3 +1,5 @@
+#THis is the MONOCULAR Visual Odometry code. We will be using this to build
+#  on setero VO and then both mono and setero SLAM
 import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -15,7 +17,6 @@ class VisualOdometry():
         self.prev_img=None
         self.gt_poses=self.load_ground_truth()
 
-        #will add the rest of the things here are there respectie function are written
 
     #function for loading the images one by one to save on space 
     def load_image(self,index):
@@ -42,6 +43,7 @@ class VisualOdometry():
         kp,ds=self.orb.detectAndCompute(img,None)
         return kp, ds
 
+    #The feature matching function 
     def feature_matching(self,ds,kp):
         matches=self.matcher.knnMatch(self.prev_ds,ds,k=2)
         good=[]
