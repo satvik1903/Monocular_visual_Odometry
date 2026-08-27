@@ -2,7 +2,6 @@
 
 A stereo visual SLAM system built from scratch: an ORB feature front-end, keyframe-based pose graph, loop-closure detection, and GTSAM pose-graph optimization. On KITTI sequence 00 (~3.7 km), loop closure reduces trajectory drift from **40.5 m to 3.3 m ATE** — a 92% reduction.
 
-![Stereo SLAM loop closure correction on KITTI 00](stereo_slam_kitti00.png)
 
 
 ---
