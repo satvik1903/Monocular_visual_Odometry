@@ -1,6 +1,11 @@
 # Dataset — never commit
+Dataset_kitti/
 Dataset_Kitti/
 *.zip
+
+# Outputs
+MONO_VO_outputs/
+*.png
 
 # Python
 vo_env/
